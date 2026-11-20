@@ -13,7 +13,7 @@ flowchart TB
     subgraph VPC["Isolated Virtual Private Cloud (10.0.0.0/16)"]
         SG["Default Security Group<br/>(All Ingress and Egress Denied)"]
         SubA["Private Subnet A (10.0.1.0/24)<br/>No Public IP Auto-Assign"]
-        SubB"Private Subnet B (10.0.2.0/24)<br/>No Public IP Auto-Assign"]
+        SubB["Private Subnet B (10.0.2.0/24)<br/>No Public IP Auto-Assign"]
         Flow["Virtual Private Cloud Flow Logs (ALL Traffic)"]
         CW["CloudWatch Log Group<br/>(365-Day Retention)"]
         Flow --> CW
